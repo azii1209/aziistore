@@ -1,76 +1,159 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to Azii Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <button class="toggle-theme" onclick="toggleTheme()">🌙</button>
 
-  <header class="header" data-aos="fade-down">
-    <h1>Welcome to Azii Store</h1>
-  
-    <div class="scroll-down" data-aos="fade-up">↓ Scroll ke Bawah ↓</div>
-    </header>
-    
+<!-- Tombol Switch Emoji -->
+<div class="toggle-wrapper">
+  <label class="switch">
+    <input type="checkbox" id="modeToggle" onchange="toggleTheme()">
+    <span class="slider">
+      <span class="ball"><span class="emoji">☀️</span></span>
+    </span>
+  </label>
+</div>
 
-  <div class="container">
-    <section class="card" data-aos="fade-up">
-      <p><strong>Halo semuanya!</strong><br>
-      Selamat datang di <strong>Azii Store</strong>, pusat layanan digital terpercaya yang siap memenuhi kebutuhan kamu!</p>
-    </section>
+<header class="header parallax">
+  <h1>Welcome to Azii Store</h1>
+  <div class="scroll-down">↓ Scroll ke Bawah ↓</div>
+</header>
 
-    <section class="card" data-aos="fade-up" data-aos-delay="100">
-      <h2>Produk Digital Kami</h2>
-      <ul>
-        <li><b>Aplikasi Premium:</b> Dapatkan aplikasi-aplikasi berbayar dengan harga terjangkau dan legal.</li>
-        <li><b>Top Up Game:</b> Layanan top up cepat dan aman untuk berbagai game favorit kamu.</li>
-        <li><b>Item Game MLBB:</b> Item eksklusif Mobile Legends harga bersahabat.</li>
-        <li><b>Jasa Edit Alight Motion:</b> Video editan keren dan estetik? Serahkan pada kami!</li>
-        <li><b>Jasa Rekber (Rekening Bersama):</b> Transaksi digital lebih aman dan terpercaya.</li>
-        <li><b>Jasa Pinjam QR:</b> Solusi praktis untuk kebutuhan transaksi sementara.</li>
-      </ul>
-    </section>
+<div class="container">
 
-    <section class="card" data-aos="zoom-in" data-aos-delay="200">
-      <h2>Saluran Testimoni</h2>
-      <a class="btn" href="https://whatsapp.com/channel/0029Vb2X2c70bIdiwE1xcy08" target="_blank">Klik di sini</a>
-    </section>
+  <section class="card fade-in">
+    <h2>Halo Semuanya!</h2>
+    <p>Selamat datang di <strong>Azii Store</strong>, pusat layanan digital terpercaya untuk kebutuhan digital kamu!</p>
+  </section>
 
-    <section class="card contacts" data-aos="fade-left" data-aos-delay="300">
-      <h2>Kontak Kami</h2>
-      <div class="contact-buttons">
-        <a href="https://wa.me/6283184096035" target="_blank" class="btn whatsapp">WhatsApp</a>
-        <a href="https://t.me/aziistor3" target="_blank" class="btn telegram">Telegram</a>
-        <a href="https://wa.me/6283181113085?text=stok" target="_blank" class="btn botorder">Bot Auto Order APK Premium</a>
+  <section class="card fade-in">
+    <h2>Produk Digital Kami</h2>
+    <ul>
+      <li><b>Aplikasi Premium:</b> Aplikasi legal harga hemat.</li>
+      <li><b>Top Up Game:</b> Aman & cepat untuk semua game favoritmu.</li>
+      <li><b>Item MLBB:</b> Skin Mobile Legends murah & resmi.</li>
+      <li><b>Jasa Edit AM:</b> Edit video aesthetic & keren.</li>
+      <li><b>Jasa Rekber:</b> Transaksi aman terpercaya.</li>
+      <li><b>Pinjam QR:</b> Solusi transaksi instan.</li>
+    </ul>
+  </section>
+
+  <section class="card fade-in">
+    <h2>Saluran Testimoni</h2>
+    <a class="btn testimonial" href="https://whatsapp.com/channel/0029Vb2X2c70bIdiwE1xcy08" target="_blank">Lihat Testimoni</a>
+  </section>
+
+  <section class="card fade-in">
+    <h2>Hubungi Kami</h2>
+    <div class="contact-buttons">
+      <a href="https://wa.me/6283184096035" target="_blank" class="btn whatsapp">WhatsApp</a>
+      <a href="https://t.me/aziistor3" target="_blank" class="btn telegram">Telegram</a>
+      <a href="https://wa.me/6283181113085?text=stok" target="_blank" class="btn botorder">Bot Order APK</a>
+    </div>
+  </section>
+
+  <section class="card fade-in faq">
+    <h2>FAQ - Pertanyaan Umum</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">Apa saja metode pembayarannya?</button>
+      <div class="faq-answer">Dana, OVO, Gopay, dan QRIS semua bank.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Apakah produk ini mempunyai garansi?</button>
+      <div class="faq-answer">Jika anda mengikuti syarat & ketentuan, maka anda mendapatkan garansi.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Apakah toko di sini aman?</button>
+      <div class="faq-answer">Tentu saja! Azii Store sudah dipercaya banyak pelanggan dan selalu amanah 100%.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Jam operasional Azii Store?</button>
+      <div class="faq-answer">
+        - Minggu: 08.00 – 21.00<br>
+        - Senin–Kamis: 15.00 – 21.00<br>
+        - Jumat: 13.00 – 21.00<br>
+        - Sabtu: 08.00 – 21.00
       </div>
-    </section>
-  </div>
+    </div>
 
-  <footer class="footer" data-aos="fade-in">
-    &copy; 2025 Azii Store. Admin Bocil Sigma.
-  </footer>
+  </section>
 
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      once: true,
-      duration: 1000,
-    });
+</div>
 
-    function toggleTheme() {
-      document.body.classList.toggle('dark-mode');
-      var button = document.querySelector('.toggle-theme');
-      if (document.body.classList.contains('dark-mode')) {
-        button.textContent = "☀️";
-      } else {
-        button.textContent = "🌙";
-      }
+<footer class="footer">
+  &copy; 2025 Azii Store | Admin Bocil Sigma.
+</footer>
+
+<!-- Tombol Back to Top -->
+<a href="#" class="back-to-top">⬆️</a>
+
+<!-- Script -->
+<script>
+function toggleTheme() {
+  document.body.classList.toggle('dark-mode');
+  const emoji = document.querySelector('.emoji');
+  if(document.body.classList.contains('dark-mode')) {
+    emoji.innerHTML = "🌙";
+  } else {
+    emoji.innerHTML = "☀️";
+  }
+}
+
+// Scroll Animasi
+const faders = document.querySelectorAll('.fade-in');
+const appearOptions = {
+  threshold: 0.2,
+  rootMargin: "0px 0px -50px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add('appear');
+      appearOnScroll.unobserve(entry.target);
     }
-  </script>
+  });
+}, appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+
+// FAQ buka tutup
+const questions = document.querySelectorAll('.faq-question');
+questions.forEach(q => {
+  q.addEventListener('click', () => {
+    q.classList.toggle('active');
+    const answer = q.nextElementSibling;
+    if (q.classList.contains('active')) {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    } else {
+      answer.style.maxHeight = 0;
+    }
+  });
+});
+
+// Back to top
+const backToTop = document.querySelector('.back-to-top');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    document.body.classList.add('scrolled');
+  } else {
+    document.body.classList.remove('scrolled');
+  }
+});
+</script>
+
 </body>
 </html>
